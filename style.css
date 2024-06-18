@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main
+{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    height: 14vw;
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start ;
+    margin-right: 7vw;
+}
+.box2{
+    height: 23vw;
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: grey 0px 7px 14px;
+}
+.box{
+    height: 30vw;
+    width: 30vw;
+}
+.box2{
+    height: 30vw;
+}
+span h1{
+    font-size: 4vw;
+    font-family: Helvetica;
+    color: #0866FF;
+}
+span h3{
+    font-size: 2vw;
+    font-family: Helvetica;
+    font-weight: 200;
+}
+span{
+    margin: 0.3vw;
+}
+#span1-facebook{
+    margin-top: 5vw;
+}
+input{
+    width: 100px;
+}
+.email input{
+    width: 80%;
+    padding: 1.1vw;
+    margin: 0.6vw 3vw;
+    border-radius: 0.3vw;
+    font-size: 1.1vw;
+    border: none;
+}
+.pass input{
+    width: 80%;
+    padding: 1.1vw;
+    margin: 0.6vw 3vw;
+    border-radius: 0.3vw;
+    font-size: 1.1vw;
+    border: none;
+}
+button{
+    width: 80%;
+    padding: 0.9vw;
+    margin: 0.6vw 3vw;
+    border-radius: 0.3vw;
+    font-size: 1.4vw;
+    border: none;
+    font-weight: 700;
+    color: white;
+    background-color: #0866FF;
+}
+.anc{
+    width: 80%;
+    padding: 0.9vw;
+    margin: 0vw 9vw;
+}
+.acc button{
+    width: 15vw;
+    padding: 1.1vw 0.6vw;
+    margin: 1.2vw 4vw;
+    border-radius: 0.3vw;
+    font-size: 1.4vw;
+    border: none;
+    font-weight: 700;
+    color: white;
+    background-color: #36A420;
+}
+.acc {
+    padding: 0 10%; /* Adjust the padding to control the gap size */
+}
+
+.acc::before {
+    content: "";
+    display: block;
+    border-top: 0.6px solid grey;
+}   
+.content{
+    padding: 2vw 2vw;
+    text-align: center;
+}
