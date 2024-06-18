@@ -3,19 +3,19 @@ name: Deploy static website to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Trigger the workflow on pushes to the main branch
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
 
     steps:
-      - name: Checkout code
+      - name: Checkout code  # Checkout the repository's code
         uses: actions/checkout@v2
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages  # Use the peaceiris/actions-gh-pages action
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
+          publish_branch: gh-pages  # Branch where the static files will be deployed
+          publish_dir: ./  # Directory containing the static website files (adjust if necessary)
